@@ -28,8 +28,6 @@
                 <TextBlock FontSize="72" Text="Create Keki Project"/>
             </Border>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Margin="683,10,10,269" Grid.RowSpan="2">
-            <Image Height="102" Width="170" Source="C:\Users\Kenneth Tell\Downloads\kekilogo.png"/>
-        </StackPanel>
+        
     </Grid>
 </Window>
