@@ -1,0 +1,35 @@
+﻿<Window x:Class="KekiEditor.GameProject.ProjectBrowser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KekiEditor.GameProject"
+        mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="ProjectBrowser" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+            <ToggleButton Content="Open Keki Project" x:Name="openKekiButton" FontSize="32"
+                        Click="OnToggleButton_Click" IsChecked="True"/>
+
+            <ToggleButton Content="Create Keki Project" x:Name="newKekiButton" FontSize="32" Margin="30,0,0,0"
+                        Click="OnToggleButton_Click" IsChecked="False"/>
+
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" x:Name="browserContent">
+            <Border Width="800" Background="MediumPurple">
+                <TextBlock FontSize="72" Text="Open Keki Project"/>
+            </Border>
+            <Border Width="800" Background="Purple">
+                <TextBlock FontSize="72" Text="Create Keki Project"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="683,10,10,269" Grid.RowSpan="2">
+            <Image Height="102" Width="170" Source="C:\Users\Kenneth Tell\Downloads\kekilogo.png"/>
+        </StackPanel>
+    </Grid>
+</Window>
