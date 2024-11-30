@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KekiEditor.GameProject"
         mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
-        Title="ProjectBrowser" Height="450" Width="800">
+        Title="ProjectBrowser" Height="600" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -21,12 +21,8 @@
 
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1" x:Name="browserContent">
-            <Border Width="800" Background="MediumPurple">
-                <TextBlock FontSize="72" Text="Open Keki Project"/>
-            </Border>
-            <Border Width="800" Background="Purple">
-                <TextBlock FontSize="72" Text="Create Keki Project"/>
-            </Border>
+            <local:OpenProjectView />
+            <local:NewProjectView />
         </StackPanel>
         
     </Grid>
