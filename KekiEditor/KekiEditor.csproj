@@ -8,4 +8,8 @@
 	<BaseOutputPath>C:\Users\Kenneth Tell\source\repos\Keki\x64\</BaseOutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+
 </Project>
