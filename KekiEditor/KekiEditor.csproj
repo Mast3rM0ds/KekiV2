@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
+    <None Include="Utilities\Serializer.cs" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace KekiEditor.Common
+namespace KekiEditor
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
